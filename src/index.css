@@ -1,10 +1,6 @@
 @import 'normalize.css';
 @import './ui/terminal';
 
-.rg-Unit {
-  min-height: 100px;
-}
-
 body {
   font-family: Roboto, sans-serif;
   font-size: 12px;
