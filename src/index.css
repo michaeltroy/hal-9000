@@ -1,4 +1,5 @@
-@import 'responsive-grid';
+@import 'normalize.css';
+@import './ui/terminal';
 
 .rg-Unit {
   min-height: 100px;
@@ -9,10 +10,11 @@ body {
   font-size: 12px;
   padding: 24px;
   background: gold;
+  font-weight: 400;
 }
 
-h2 {
-  font-weight: 300;
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 400;  
 }
 
 .grey { background: grey; }

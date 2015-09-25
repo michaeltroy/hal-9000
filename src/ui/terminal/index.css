@@ -1,0 +1,100 @@
+/*
+ * This css file is part of jquery terminal
+ *
+ * Licensed under GNU LGPL Version 3 license
+ * Copyright (c) 2011-2013 Jakub Jankiewicz <http://jcubic.pl>
+ *
+ */
+ 
+.terminal .terminal-output 
+.format, 
+.cmd 
+.format,
+.cmd 
+.prompt, 
+.cmd .prompt div, 
+.terminal .terminal-output div div {
+  display: inline-block;
+}
+
+.cmd .clipboard {
+  display: none;
+}
+
+.cmd > .clipboard {
+  position: fixed;
+}
+
+.terminal {
+  position: relative;
+  overflow: hidden;
+}
+
+.cmd {
+  overflow: hidden;
+}
+
+.cmd .cursor.blink {
+  animation: blink 1s infinite steps(1, start);
+}
+
+@keyframes blink {
+  
+  0%, 100% {
+    background-color: rgba(0,0,0,1);
+    color: #aaa;
+  }
+  
+  50% {
+    background-color: rgba(0,0,0,0);
+    color: #000;
+  }
+}
+
+.terminal .terminal-output div div, 
+.cmd .prompt {
+  display: block;
+  line-height: 20px;
+}
+
+.cmd .prompt {
+  float: left;
+}
+
+.terminal, 
+.cmd {
+  color: black;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.terminal-output > div:first-child {
+  margin: 0 0 16px 0;
+}
+
+.terminal .terminal-output div span {
+  display: inline-block;
+}
+
+.cmd span {
+  float: left;
+}
+
+.terminal .inverted, 
+.cmd .inverted, 
+.cmd .cursor.blink {
+  background-color: red;
+  color: #000;
+}
+
+.terminal .terminal-output div.error, 
+.terminal .terminal-output div.error div {
+  color: red;
+}
+
+.tilda {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+}
